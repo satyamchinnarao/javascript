@@ -1,0 +1,82 @@
+*{
+    margin:0;
+    padding:0;
+   
+}
+body {
+    min-height: 100hv;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clock {
+display: flex;
+width: 300px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;    
+background: url("images/clock.png");
+    background-size: cover;
+    position:  absolute;
+    left: 0;
+    top: 0; /* set these so Chrome doesn't return 'auto' from getComputedStyle */
+  
+    border: 2px  solid rgba(0,0,0,0.5); 
+    border-radius: 4px; padding: 8px;    
+}
+#clock:before {
+content: '';
+position: absolute;
+width: 15px;
+height: 15px;
+background-color:#fff;
+border-radius: 50%;
+}
+#clock .hours,
+#clock .mintues,
+#clock .seconds  {
+position: absolute;
+}
+#clock .hours .hour{
+    width: 160px;
+    height: 160px;
+}
+#clock .mintues .mintue{
+    width: 190px;
+    height: 190px;
+}
+#clock .seconds .second{
+    width: 220px;
+    height: 220px;
+}
+.second, .mintue, .hour{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    border-radius: 50%;
+}
+.hour:before {
+content: '';
+position: absolute;
+width: 5px;
+height: 80px;
+background-color: black;
+z-index: 10;
+}
+.mintue:before {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 100px;
+    background-color: #00deee;
+    z-index: 12;
+    }
+    .second:before {
+        content: '';
+        position: absolute;
+        width: 1px;
+        height: 120px;
+        background-color:red;
+        z-index: 14;
+        }
