@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <link href="style.css" rel="stylesheet" />
+    
+</head>
+<body>
+    <div draggable="true" id="clock" draggable="true">
+        <div class="hours">
+            <div class="hour" id="hour"></div>
+        </div>
+        <div class="mintues">
+            <div class="mintue" id="mintue"></div>
+        </div>
+        <div class="seconds">
+            <div class="second" id="second"></div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+    const degree = 6;
+    const hour = document.getElementById("hour")
+    const mintue = document.querySelector("#mintue");
+    const second = document.querySelector("#second");
+    let calculateDate = () => {
+       
+}
+setInterval(() => {
+    console.log("here");
+    let day = new Date();
+    let hh = day.getHours() * 30;
+    let mm = day.getMinutes() * degree;
+    let ss = day.getSeconds() * degree;
+    console.log(day.getMinutes());
+    hour.style.transform = `rotateZ(${(hh)+(mm/12)}deg)`;
+    mintue.style.transform = `rotateZ(${mm}deg)`;
+    second.style.transform = `rotateZ(${ss}deg)`;
+} ,1000);
+</script>
+</html>
