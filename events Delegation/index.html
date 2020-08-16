@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script defer src="index.js"></script>
+    <style>
+                  .loader {
+                    border: 5px solid #f3f3f3;
+              border-radius: 50%;
+              border-top: 5px solid #3498db;
+              width: 20px;
+              height: 20px;
+              -webkit-animation: spin 2s linear infinite; /* Safari */
+              animation: spin 2s linear infinite;
+            }
+                  }
+
+                  /* Safari */
+                  @-webkit-keyframes spin {
+                    0% {
+                      -webkit-transform: rotate(0deg);
+                    }
+                    100% {
+                      -webkit-transform: rotate(360deg);
+                    }
+                  }
+
+                  @keyframes spin {
+                    0% {
+                      transform: rotate(0deg);
+                    }
+                    100% {
+                      transform: rotate(360deg);
+                    }
+                  }
+                  .heading {
+                    font-weight: bold;
+                    font-size: 24px;
+                    text-align: center;
+                    text-transform: capitalize;
+                  }
+                  ul {
+                    list-style: none;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    margin: 0;
+                    flex-wrap: wrap;
+                  }
+                  ul li {
+                    width: 200px;
+                    height: 200px;
+                    background-color: black;
+                    color: white;
+                    text-align: center;
+                    float: left;
+                    margin: 25px;
+                    border-radius: 5px;
+                  }
+                  li:hover {
+                      -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+      -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+      box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+                  }
+                  .squure {
+                    width: 50px;
+                    height: 50px;
+                    float: left;
+                    border: 1 solid black;
+                  }
+    </style>
+  </head>
+  <body>
+    <div class="msg"></div>
+    <ul id="catagories">
+      <li id="laptop">laptop</li>
+      <li id="mobile">mobile</li>
+      <li id="camera">Camera</li>
+      <li id="Masks">Masks</li>
+      <li id="kitchen">kitchen</li>
+      <li id="Electronics">Electronics</li>
+      <li id="Clothings">Clothings</li>
+      <li id="Speaker">Speaker</li>
+      <li id="Books">Books</li>
+    </ul>
+  </body>
+</html>
