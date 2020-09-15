@@ -4,22 +4,25 @@
     border: 1px solid #000;
 }
 #dragon{
-    width: 20px;
-    height: 50px;
-    background-color: #000;
+    width: 50px;
+    height: 80px;
+   
     position: relative;
-    top:150px
+    top:125px;
+    background-image: url("run.gif");
+    background-repeat: no-repeat;
+    background-size: 50px 80px;
 }
 .animates {
     animation: jump .5s;
 }
 @keyframes jump{
     0%{
-        top:100px
+        top:80px
     }
     100%
     {
-        top: 150px;
+        top: 120px;
     }
 }
 #tree {
@@ -27,7 +30,7 @@
     height: 20px;
     animation: run 1s infinite;
     position: relative;
-    top:130px;
+    top:100px;
     background-color: red;
 }
 @keyframes run {
