@@ -10,3 +10,32 @@
     position: relative;
     top:150px
 }
+.animates {
+    animation: jump .5s;
+}
+@keyframes jump{
+    0%{
+        top:100px
+    }
+    100%
+    {
+        top: 150px;
+    }
+}
+#tree {
+    width: 20px;
+    height: 20px;
+    animation: run 1s infinite;
+    position: relative;
+    top:130px;
+    background-color: red;
+}
+@keyframes run {
+    0% {
+        left: 500px;
+    }
+    100% {
+        left: 0px;
+    }
+}
+
